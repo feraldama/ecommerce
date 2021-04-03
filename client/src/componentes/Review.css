@@ -1,0 +1,33 @@
+.box-description {
+  direction: rtl;
+}
+
+.box-description a {
+  font-size: 40px;
+  color: black
+}
+
+.box-description a:hover {
+  color: yellow;
+  transition: 0.3s all;
+}
+
+.s1:hover~a {
+  color: yellow;
+}
+
+.s2:hover~a {
+  color: yellow;
+}
+
+.s3:hover~a {
+  color: yellow;
+}
+
+.s4:hover~a {
+  color: yellow;
+}
+
+.s5:hover~a {
+  color: yellow;
+}

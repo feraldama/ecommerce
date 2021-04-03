@@ -1,0 +1,31 @@
+.container-signup {
+  width: 500px;
+  margin: 50px auto;
+  padding-top: 30px;
+  width: 350px;
+  height: 820px;
+  box-shadow: 0 2px 20px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+}
+
+.sign-buttons {
+
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+}
+
+@media screen and (min-width: 400px) {
+  .container-signup {
+    width: 500px;
+    margin: 50px auto;
+    padding-top: 30px;
+    width: 600px;
+    height: 750px;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 10%);
+    border-radius: 20px;
+  }
+  .sign-buttons {
+    grid-template-columns: auto auto;
+  }
+}

@@ -1,0 +1,51 @@
+.container-checkout {
+  width: 500px;
+  margin: 50px auto;
+  padding-top: 30px;
+  width: 350px;
+  height: 970px;
+  box-shadow: 0 2px 20px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+}
+
+.button-final {
+  border: 2px solid white;
+  background-color: rgb(86, 237, 116);
+  color: white;
+  width: 190px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.check-buttons {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+  justify-content: center;
+}
+
+.button-final2 {
+  border: 2px solid white;
+  background-color: rgb(195, 83, 83);
+  color: white;
+  width: 190px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 400px) {
+  .container-checkout {
+    margin: 50px auto;
+    padding-top: 30px;
+    width: 700px;
+    height: 1000px;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 10%);
+    border-radius: 20px;
+  }
+  .check-buttons {
+    gap: 20px;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+
+}

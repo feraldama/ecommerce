@@ -1,0 +1,55 @@
+.container-card {
+  box-shadow: 0 2px 20px rgb(0 0 0 / 10%);
+  border-radius: 24px;
+  width: 343px;
+  height: 404px;
+  padding: 22px 21px 21px 22px;
+  background-color: #fff;
+  border: 1px solid #4DC591;
+  margin-bottom: 36px;
+}
+
+.container-card:hover {
+  box-shadow: 0 20px 40px rgb(0 0 0 / 10%);
+  border: 3px solid #4DC591;
+}
+
+@media screen and (max-width: 400px) {
+  .container-card {
+    max-width: 560px;
+    max-height: 404px;
+    padding: 0;
+  }
+}
+
+.button-cart2 {
+  border: 2px solid white;
+  background-color: #4DC591;
+  color: white;
+  width: 190px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.button-cart2:hover {
+  border: 2px solid #4DC591;
+  background-color: white;
+  color: #4DC591;
+  width: 190px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.button-cart {
+  border: 2px solid #4DC591;
+  background-color: white;
+  color: #4DC591;
+  width: 190px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.button-cart:hover {
+  background-color: #4DC591;
+  color: white;
+}
