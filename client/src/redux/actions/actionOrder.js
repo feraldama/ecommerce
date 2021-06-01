@@ -15,7 +15,11 @@ export const postOrder = (userId) => (dispatch) => {
 };
 export const postEmail = (checkout) => (dispatch) => {
   console.log("Checkout en actionOrder: ", checkout);
-  axios.post(`http://localhost:3001/orders/send-email`).then((data) => {
-    return data.data;
-  });
+  axios
+    .post(`http://localhost:3001/orders/send-email`, {
+      checkout,
+    })
+    .then((data) => {
+      return data.data;
+    });
 };

@@ -4,27 +4,32 @@
   width: 450px;
   height: 300px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  margin-bottom: 30px;
   padding: 12px;
 }
 
-.card-title{
+.card-title {
   padding-left: 12px;
   padding-right: 12px;
 }
-.button-item{
+.button-item {
   background-color: black;
   color: white;
   border-radius: 99px;
   height: 32px;
   width: 32px;
 }
-.cart-body {
+.card-body {
   display: grid;
   grid-template-columns: auto auto;
 }
-.card-items{
+.card-items {
   display: flex;
   padding: 6px;
+}
 
+.card-button {
+  background-color: brown;
+  margin-bottom: 30px;
+  width: 450px;
+  color: white;
 }

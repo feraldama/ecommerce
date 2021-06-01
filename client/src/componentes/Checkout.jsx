@@ -4,13 +4,12 @@ import "./SignUp.css";
 import { useHistory } from "react-router-dom";
 import { postEmail, postOrder } from "../redux/actions/actionOrder";
 import { emptyCart } from "../redux/actions/actionsCart";
-import './Checkout.css';
+import "./Checkout.css";
 import Swal from "sweetalert2";
 export default () => {
   let history = useHistory();
   var route;
   const login = useSelector((state) => state.reducerLogin.login);
-
 
   const handleChange = (e) => {
     var { name, value } = e.target;
@@ -38,10 +37,9 @@ export default () => {
     email: "",
     direccion: "",
     tarjeta: "",
-    numtarjeta: "",
-    nombretitular: "",
     vencimiento: "",
     cvv: "",
+    nombre: "",
   });
   return (
     <form className="container-checkout" onSubmit={checkout}>
@@ -131,7 +129,7 @@ export default () => {
 
       <br></br>
       <br></br>
-      <div className='check-buttons'>
+      <div className="check-buttons">
         <button type="submit" className="button-final">
           Finalizar Compra 👌
         </button>

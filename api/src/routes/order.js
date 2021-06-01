@@ -11,24 +11,40 @@ server.get("/", (req, res, next) => {
 });
 //Envio de E-mail
 server.post("/send-email", (req, res) => {
+  console.log("ACA");
+  console.log(req.body.checkout);
   const transporter = nodemailer.createTransport({
     host: "smtp.ethereal.email",
     port: 587,
     auth: {
-      user: "charles.braun@ethereal.email",
-      pass: "7xSaZFu1ESdZ7MePdP",
+      user: "mustafa.christiansen@ethereal.email",
+      pass: "CWunY82vRWbpXkv6ND",
     },
   });
   var mailOptions = {
     from: "Remitente",
-    to: "fer.ald@gmail.com",
+    to: "fer.ald87@gmail.com",
     subject: "Enviado desde nodemailer",
-    text: "Hola Mundo!!!",
+    html: `
+    <table>
+    <tr>
+      <th>Provincia</th>
+      <th>Dirección</th> 
+      <th>Titular</th>
+    </tr>
+    <tr>
+      <td>${req.body.checkout.provincia}</td>
+      <td>${req.body.checkout.direccion}</td>
+      <td>${req.body.checkout.nombre}</td>
+    </tr>
+  </table>
+`, //Hola Mundo!!! ${req.body.checkout.nombre}
   };
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       res.status(500).send(error.message);
     } else {
+      console.log("ALLA");
       res.status(200).jsonp(req.body);
     }
   });
@@ -79,7 +95,6 @@ server.post("/:userId/checkout", (req, res, next) => {
       }
     })
     .catch(next);
-
 });
 server.get("/:userId", (req, res, next) => {
   const { userId } = req.params;

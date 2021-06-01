@@ -97,14 +97,16 @@ export default function CartItem({
           <button alt="img" onClick={quantityPlus} className="button-item">
             +
           </button>
-          <h4 className="card-title">Quantity: {quantity}</h4>
+          <h4 className="card-title">Cantidad: {quantity}</h4>
           <button onClick={quantityLess} className="button-item">
             -
           </button>
         </div>
-        <h3 className='card-title'> Subtotal: ${subtotal}</h3>
-        {/* <button onClick={borrarProducto} className='cart-button'>X</button> */}
+        <h3 className="card-title"> Subtotal: ${subtotal}</h3>
       </div>
+      <button onClick={borrarProducto} className="card-button">
+        Eliminar
+      </button>
     </div>
   );
 }
